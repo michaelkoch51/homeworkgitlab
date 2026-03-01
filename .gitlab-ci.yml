@@ -1,0 +1,10 @@
+stages:
+  - build
+
+test-job:
+  stage: build
+  image: alpine:latest
+  script:
+    - echo "Проверка CI/CD на Mac M1"
+    - echo "Раннер работает успешно!"
+
