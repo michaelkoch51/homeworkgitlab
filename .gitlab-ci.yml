@@ -1,10 +1,11 @@
-stages:
-  - build
+variables:
+  CI_SERVER_URL: "http://gitlab"
+  GIT_STRATEGY: clone
 
 test-job:
   stage: build
   image: alpine:latest
   script:
-    - echo "Проверка CI/CD на Mac M1"
-    - echo "Раннер работает успешно!"
+    - echo "Победа! Раннер на Mac M1 увидел проект."
+    - echo "Задание выполнено успешно."
 
